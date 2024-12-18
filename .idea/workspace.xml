@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="efdb0b5f-ef4c-4b1c-951c-9d19797ae1b2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/account/AccountModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/book/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/book/BookCopy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/book/EBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/book/Magazine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/book/PrintedBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/catalog/Catalog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/history/ActionHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/Library.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/loan/Loan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/notifical/NotificationSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/notifical/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/payment/PaymentSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rating/RatingComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/report/ReportStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/user/Librarian.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/user/Professor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/user/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/user/User.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "DashaNezh"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Vesimeu/SystemLibraryOnJava",
+    "accountId": "45f5208f-2e8f-44b8-8248-815a12389807"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2qOJdIbpr4plSS68NfbNNkxznIH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Дарья/IdeaProjects/Library Management"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Дарья\IdeaProjects\LibraryManegement\src\main" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="LibraryManegement" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="efdb0b5f-ef4c-4b1c-951c-9d19797ae1b2" name="Changes" comment="" />
+      <created>1734527775611</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734527775611</updated>
+    </task>
+    <servers />
+  </component>
+</project>
