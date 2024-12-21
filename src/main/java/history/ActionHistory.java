@@ -20,7 +20,7 @@ public class ActionHistory {
     }
 
     // Создание снапшота текущего состояния (Memento)
-    public HistoryMemento saveState() {
+    public HistoryMemento saveTheState() {
         HistoryMemento memento = new HistoryMemento(new ArrayList<>(actions));
         historySnapshots.add(memento);
         System.out.println("Состояние сохранено с количеством действий: " + actions.size());
@@ -28,7 +28,7 @@ public class ActionHistory {
     }
 
     // Восстановление состояния из снапшота
-    public void restoreState(HistoryMemento memento) {
+    public void restoreTheState(HistoryMemento memento) {
         if (memento != null) {
             actions.clear();
             actions.addAll(memento.getSavedActions());

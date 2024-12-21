@@ -12,7 +12,7 @@ public class EBook extends Book {
     }
 
     @Override
-    public String getDetails() {
+    public String getDescription() {
         return "EBook: " + title + " by " + author + ", Size: " + fileSize + "MB, Format: " + format;
     }
     //можно добавить геттеры и сеттеры

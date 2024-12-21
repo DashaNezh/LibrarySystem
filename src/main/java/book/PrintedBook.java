@@ -10,7 +10,7 @@ public class PrintedBook extends Book {
     }
 
     @Override
-    public String getDetails() {
+    public String getDescription() {
         return "Printed Book: " + title + " by " + author + ", Shelf Location: " + locationOnShelf;
     }
 }

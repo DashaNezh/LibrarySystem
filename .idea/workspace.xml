@@ -4,33 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="efdb0b5f-ef4c-4b1c-951c-9d19797ae1b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/account/AccountModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/book/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/book/BookCopy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/book/EBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/book/Magazine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/book/PrintedBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/catalog/Catalog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/history/ActionHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/Library.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/loan/Loan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/notifical/NotificationSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/notifical/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/payment/PaymentSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rating/RatingComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/report/ReportStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/user/Librarian.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/user/Professor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/user/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/user/User.java" afterDir="false" />
+    <list default="true" id="efdb0b5f-ef4c-4b1c-951c-9d19797ae1b2" name="Changes" comment="первый коммит">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/book/BookWithReview.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/book/EBookWithMetadata.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/book/BookCopy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/BookCopy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/book/EBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/EBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/book/Magazine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/Magazine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/book/PrintedBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/PrintedBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/catalog/Catalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/catalog/Catalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/history/ActionHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/history/ActionHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/notifical/NotificationSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/notifical/NotificationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/payment/PaymentSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/payment/PaymentSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/user/Librarian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/Librarian.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/user/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/Professor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/user/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,21 +41,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "DashaNezh"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DashaNezh&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Vesimeu/SystemLibraryOnJava",
-    "accountId": "45f5208f-2e8f-44b8-8248-815a12389807"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/DashaNezh/LibrarySystem&quot;,
+    &quot;accountId&quot;: &quot;45f5208f-2e8f-44b8-8248-815a12389807&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2qOJdIbpr4plSS68NfbNNkxznIH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -75,7 +69,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Дарья/IdeaProjects/Library Management"
+    "last_opened_file_path": "C:/Users/Дарья/IdeaProjects/LibraryManegement"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -106,6 +100,30 @@
       <option name="presentableId" value="Default" />
       <updated>1734527775611</updated>
     </task>
+    <task id="LOCAL-00001" summary="первый коммит">
+      <option name="closed" value="true" />
+      <created>1734535854108</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734535854108</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="первый коммит" />
+    <option name="LAST_COMMIT_MESSAGE" value="первый коммит" />
   </component>
 </project>

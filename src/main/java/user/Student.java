@@ -8,7 +8,7 @@ public class Student extends User {
     }
 
     @Override
-    public boolean canBorrow() {
+    public boolean canBorrowABook() {
         // Студент может брать книги, если не превысил лимит
         return booksBorrowed < maxBooks;
     }

@@ -21,7 +21,7 @@ public class BookCopy implements Cloneable {
     }
 
     public String getDetails() {
-        return book.getDetails() + " (Copy ID: " + copyId + ")";
+        return book.getDescription() + " (Copy ID: " + copyId + ")";
     }
 
     public Book getBook() {

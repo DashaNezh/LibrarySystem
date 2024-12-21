@@ -1,12 +1,12 @@
 package payment;
 
 public interface PaymentSystem {
-    void processPayment(double amount);
+    void thePaymentProcess(double amount);
 }
 
 class OnlinePayment implements PaymentSystem {
     @Override
-    public void processPayment(double amount) {
+    public void thePaymentProcess(double amount) {
         // Реализация для онлайн-платежей
         System.out.println("Обработка онлайн-платежа на сумму " + amount);
         // Пример логики обработки платежа
@@ -20,7 +20,7 @@ class OnlinePayment implements PaymentSystem {
 
 class TerminalPayment implements PaymentSystem {
     @Override
-    public void processPayment(double amount) {
+    public void thePaymentProcess(double amount) {
         // Реализация для терминальных платежей
         System.out.println("Обработка терминального платежа на сумму " + amount);
         // Пример логики обработки платежа
@@ -47,7 +47,7 @@ class PaymentAdapter {
 
     public void pay(double amount) {
         if (paymentSystem != null) {
-            paymentSystem.processPayment(amount);
+            paymentSystem.thePaymentProcess(amount);
         } else {
             System.out.println("Платёжная система не доступна.");
         }

@@ -1,7 +1,7 @@
 package library;
 
 import loan.Loan;
-import notifical.NotificationSystem;
+import notifical.NotificationService;
 import user.User;
 import book.Book;
 
@@ -29,16 +29,16 @@ public class Library {
     }
 
     // Регистрация пользователя
-    public void registerUser(User user) {
+    public void userRegistration(User user) {
         users.add(user);
     }
 
     // Выдача книги пользователю
-    public Loan issueBook(User user, Book book) {
-        if (user.canBorrow()) {
+    public Loan issueABook(User user, Book book) {
+        if (user.canBorrowABook()) {
             Loan loan = new Loan(user, book);
             loans.add(loan);
-            user.borrowBook(book); // Уменьшаем доступные книги пользователя
+            user.takeABook(book); // Уменьшаем доступные книги пользователя
             user.addAction("Книга выдана пользователю: " + user.getName());//Создаём историю
             notifyObserver("Книга выдана пользователю: " + user.getName(), user);
             return loan;
@@ -57,7 +57,7 @@ public class Library {
 
     // Уведомление всех наблюдателей через бибилотику
     public void notifyObserver(String message, User user) {
-        NotificationSystem.notifyThisSubscribers(message,user);
+        NotificationService.notifyFollowersAboutThis(message,user);
     }
 
     @Override

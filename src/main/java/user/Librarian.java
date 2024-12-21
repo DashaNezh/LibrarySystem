@@ -8,7 +8,7 @@ public class Librarian extends User {
     }
 
     @Override
-    public boolean canBorrow() {
+    public boolean canBorrowABook() {
         return true;  // Библиотекарь всегда может брать книгу
     }
 }

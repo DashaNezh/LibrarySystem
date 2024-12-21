@@ -12,7 +12,7 @@ public class Magazine extends Book {
     }
 
     @Override
-    public String getDetails() {
+    public String getDescription() {
         return "Magazine: " + title + " by " + author + ", Issue: " + issue + ", Publication Date: " + publicationDate;
     }
 }

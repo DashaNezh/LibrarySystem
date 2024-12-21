@@ -2,7 +2,7 @@ import book.*;
 import library.Library;
 import loan.Loan;
 import user.*;
-import notifical.NotificationSystem;
+import notifical.NotificationService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,29 +35,29 @@ public class Main {
         users.add(librarian);
 
         // Регистрируем пользователей в библиотеке
-        library.registerUser(student);
-        library.registerUser(professor);
-        library.registerUser(librarian);
+        library.userRegistration(student);
+        library.userRegistration(professor);
+        library.userRegistration(librarian);
 
         // Создаем систему уведомлений
-        NotificationSystem notificationSystem = new NotificationSystem();
+        NotificationService notificationService = new NotificationService();
 
         // Подписываем пользователей на уведомления
-        notificationSystem.addSubscriber(student);
-        notificationSystem.addSubscriber(professor);
-        notificationSystem.addSubscriber(librarian);
+        notificationService.addAFollower(student);
+        notificationService.addAFollower(professor);
+        notificationService.addAFollower(librarian);
 
         // Пользователи берут книги
-        Loan studentLoan = library.issueBook(student, ebook);  // Студент берет книгу
-        Loan professorLoan = library.issueBook(professor, printedBook);  // Профессор берет книгу
-        Loan librarianLoan = library.issueBook(librarian, magazine);  // Библиотекарь берет журнал
+        Loan studentLoan = library.issueABook(student, ebook);  // Студент берет книгу
+        Loan professorLoan = library.issueABook(professor, printedBook);  // Профессор берет книгу
+        Loan librarianLoan = library.issueABook(librarian, magazine);  // Библиотекарь берет журнал
 
         // Возврат книги
         library.returnBook(studentLoan);  // Студент возвращает книгу
         library.returnBook(professorLoan);  // Профессор возвращает книгу
 
         // Отправка уведомлений
-        notificationSystem.notifySubscribers("*** Уведомление: книги должны быть возвращены вовремя! ***");
+        notificationService.notifyFollowers("*** Уведомление: книги должны быть возвращены вовремя! ***");
 
         // История событий пользователей
         users.forEach(user -> {

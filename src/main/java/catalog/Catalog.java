@@ -35,7 +35,6 @@ public class Catalog {
         boolean match(Book book);
     }
 
-    // Пример реализации поиска по автору
     class AuthorSearchCriteria implements SearchCriteria {
         private String author;
 
@@ -49,7 +48,6 @@ public class Catalog {
         }
     }
 
-    // Пример реализации поиска по названию
     class TitleSearchCriteria implements SearchCriteria {
         private String title;
 
@@ -63,7 +61,6 @@ public class Catalog {
         }
     }
 
-    // Пример реализации поиска по году
     class YearSearchCriteria implements SearchCriteria {
         private int year;
 

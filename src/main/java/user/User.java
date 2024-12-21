@@ -1,11 +1,8 @@
 package user;
 
 import book.Book;
-import notifical.NotificationSystem;
 import notifical.Observer;
 import history.*;
-
-import java.util.List;
 
 public abstract class User implements Observer {
     protected String name;
@@ -43,13 +40,13 @@ public abstract class User implements Observer {
     }
 
     // Абстрактный метод для проверки, может ли пользователь взять книгу
-    public abstract boolean canBorrow();
+    public abstract boolean canBorrowABook();
 
     // Метод для того, чтобы пользователь мог забрать книгу
-    public void borrowBook(Book book) {
-        if (canBorrow()) {
+    public void takeABook(Book book) {
+        if (canBorrowABook()) {
             booksBorrowed++; // Увеличиваем количество взятых книг
-            update(name + " забронировал " + book.getDetails());
+            update(name + " забронировал " + book.getDescription());
         } else {
             System.out.println(name + " ты не можешь забрать книгу.");
         }
@@ -62,12 +59,12 @@ public abstract class User implements Observer {
 
     // Метод для сохранения текущего состояния
     public ActionHistory.HistoryMemento saveActionHistory() {
-        return actionHistory.saveState();
+        return actionHistory.saveTheState();
     }
 
     // Метод для восстановления состояния
     public void restoreActionHistory(ActionHistory.HistoryMemento memento) {
-        actionHistory.restoreState(memento);
+        actionHistory.restoreTheState(memento);
     }
     // Получить количество взятых книг
     public int getBooksBorrowed() {
