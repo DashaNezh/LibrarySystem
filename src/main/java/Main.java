@@ -47,14 +47,18 @@ public class Main {
         notificationService.addAFollower(professor);
         notificationService.addAFollower(librarian);
 
-        // Пользователи берут книги
-        Loan studentLoan = library.issueABook(student, ebook);  // Студент берет книгу
-        Loan professorLoan = library.issueABook(professor, printedBook);  // Профессор берет книгу
-        Loan librarianLoan = library.issueABook(librarian, magazine);  // Библиотекарь берет журнал
+        // Пользователи берут книги через команду
+        library.issueBookCommand(student, ebook);  // Студент берет книгу
+        library.issueBookCommand(professor, printedBook);  // Профессор берет книгу
+        library.issueBookCommand(librarian, magazine);  // Библиотекарь берет журнал
 
-        // Возврат книги
-        library.returnBook(studentLoan);  // Студент возвращает книгу
-        library.returnBook(professorLoan);  // Профессор возвращает книгу
+        Loan loanStudent = new Loan(student, ebook);
+        Loan loanProfessor = new Loan(professor,printedBook);
+        Loan loanLibrarian = new Loan(librarian,magazine);
+
+        // Возврат книги через команду
+        library.returnBookCommand(loanStudent);  // Студент возвращает книгу уже через паттерн Command, как-бы объектом.
+        library.returnBookCommand(loanProfessor);  // Профессор возвращает книгу
 
         // Отправка уведомлений
         notificationService.notifyFollowers("*** Уведомление: книги должны быть возвращены вовремя! ***");
@@ -68,5 +72,7 @@ public class Main {
             // Сохраняем историю
             user.saveActionHistory();
         });
+
+        //TODO Добавила паттерн Command, теперь действия реализованы в виде объекта .
     }
 }

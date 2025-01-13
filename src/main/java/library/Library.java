@@ -1,13 +1,16 @@
 package library;
 
+import command.Command;
+import command.CommandInvoker;
+import command.IssueBookCommand;
+import command.ReturnBookCommand;
 import loan.Loan;
 import notifical.NotificationService;
 import user.User;
 import book.Book;
-
 import java.util.List;
 import java.util.ArrayList;
-
+// Library.java
 public class Library {
     private static Library instance;
     private List<Book> books = new ArrayList<>();
@@ -33,31 +36,29 @@ public class Library {
         users.add(user);
     }
 
-    // Выдача книги пользователю
-    public Loan issueABook(User user, Book book) {
+    // Команда для выдачи книги
+    public void issueBookCommand(User user, Book book) {
         if (user.canBorrowABook()) {
             Loan loan = new Loan(user, book);
             loans.add(loan);
             user.takeABook(book); // Уменьшаем доступные книги пользователя
-            user.addAction("Книга выдана пользователю: " + user.getName());//Создаём историю
+            user.addAction("Книга выдана пользователю: " + user.getName()); // Создаем историю
             notifyObserver("Книга выдана пользователю: " + user.getName(), user);
-            return loan;
         } else {
             System.out.println("Пользователь не может взять больше книг.");
-            return null;
         }
     }
 
-    // Возврат книги пользователем
-    public void returnBook(Loan loan) {
+    // Команда для возврата книги
+    public void returnBookCommand(Loan loan) {
         loan.setReturned(true);
-        notifyObserver("Книга возвращена пользователем: " + loan.getUser().getName() , loan.getUser());
+        notifyObserver("Книга возвращена пользователем: " + loan.getUser().getName(), loan.getUser());
         loan.getUser().addAction("Книга возвращена пользователем: " + loan.getUser().getName());
     }
 
-    // Уведомление всех наблюдателей через бибилотику
+    // Уведомление всех наблюдателей через библиотеку
     public void notifyObserver(String message, User user) {
-        NotificationService.notifyFollowersAboutThis(message,user);
+        NotificationService.notifyFollowersAboutThis(message, user);
     }
 
     @Override
@@ -84,3 +85,4 @@ public class Library {
         return loans;
     }
 }
+
